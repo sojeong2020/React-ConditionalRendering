@@ -1,14 +1,21 @@
 import React from "react";
+import Login from "./Login";
+
+let isLoggedIn = true;
+
+const currentTime = new Date(2021, 3, 4, 1).getHours();
+
+console.log(currentTime);
 
 function App() {
   return (
     <div className="container">
-      <h1>Hello</h1>
-      <form className="form">
-        <input type="text" placeholder="Username" />
-        <input type="password" placeholder="Password" />
-        <button type="submit">Login</button>
-      </form>
+      {/* {isLoggedIn === true ? <h1>Hello</h1> : <Login  />} */}
+      {currentTime > 12 ? (
+        <h1>Who is working now??</h1>
+      ) : (
+        <p>I am sleeping..,</p>
+      )}
     </div>
   );
 }
