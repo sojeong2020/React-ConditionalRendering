@@ -1,6 +1,6 @@
 # React-ConditionalRendering
 
-Created with CodeSandbox
+Created with Udemy Web development Bootcamp
 
 # Ternery Operator
 
